@@ -1,0 +1,329 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>LOGIN</title>
+/* for slider */
+<script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+/* for slider */
+<style>
+#maindiv
+{
+background-color:black;
+width:990px;
+height:1300px;
+position:relative;
+margin-left:auto;
+margin-right:auto;
+border:1px solid black;
+}
+#banner
+{
+background-color:black;
+width:989px;
+height:220px;
+position:absolute;
+border:1px solid black;
+text-align:center;
+line-height:200px;
+line-height:200px;
+}
+#newssubmenu
+{
+background-color:black;
+width:989px;
+height:55px;
+position:absolute;
+border:1px solid black;
+text-align:center;
+margin-top:200px;
+line-height:50px;
+}
+#slider
+{
+background-color:black;
+width:989px;
+height:300px;
+position:absolute;
+border:1px solid black;
+text-align:center;
+margin-top:260px;
+line-height:300px;
+}
+#content
+{
+background-color:black;
+width:989px;
+height:500px;
+position:absolute;
+border:1px solid black;
+text-align:center;
+margin-top:550px;
+line-height:300px;
+}
+#footer
+{
+background-color:black;
+width:989px;
+height:250px;
+position:absolute;
+border:1px solid black;
+text-align:center;
+margin-top:1050px;
+line-height:300px;
+}
+#leftside
+{
+background-color:black;
+width:250px;
+height:500px;
+position:absolute;
+border:1px solid black;
+text-align:center;
+margin-top:0px;
+line-height:0px;
+}
+#rightside
+{
+background-color:black;
+width:737px;
+height:500px;
+position:absolute;
+border:2px solid red;
+text-align:center;
+margin-top:0px;
+margin-left:250px;
+line-height:150px;
+}
+ul
+{
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+#abcmenu
+{
+display:block;
+width: 240px;
+height:40px ;
+line-height: 40px;
+text-decoration: none;
+color:red;
+text-align: center;
+border:2px solid red ;
+border-radius: 20px 0px 20px 0px;
+background-color: black;
+}
+#abcmenu:hover
+{
+color:black; 
+background-color:red; 
+}
+/*
+FOR DROPDOWN MENU
+*/
+ul#dropmenu , ul#dropmenu ul.submenu
+{
+padding:0;
+margin: 0;
+margin-top: px;
+}
+ul#dropmenu li, ul.submenu li
+{
+    list-style-type: none;
+}
+ul#dropmenu li a, ul.submenu li a
+{
+    text-decoration:none ;
+    color:red;
+    background:black;
+    width: 200px;
+    height: 50px;
+    display:inline-block;
+    border-radius: 20px 0px 20px 0px ;
+    text-align: center;
+    line-height: 50px;
+    border:2px solid red ;
+}
+ul#dropmenu li a:hover, ul.submenu li a:hover
+{
+    text-decoration:none ;
+    color:black;
+    background:red;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 20px 0px 20px 0px ;
+    text-align: center;
+    line-height: 20px;
+    border:2px solid red ;
+}
+ul#dropmenu li
+{
+position: relative;
+}
+ul#dropmenu li ul.submenu
+{
+display: none;
+position: absolute;
+top: 30px;
+left: 0px;
+width:100px ;
+}
+ul#dropmenu li:hover ul.submenu
+{
+   display: block;
+}
+/*
+FOR DROPDOWN MENU
+*/
+#news
+{
+display:block;
+width: 180px;
+height:40px ;
+line-height: 40px;
+color:red;
+text-align: center;
+border:2px solid red ;
+border-radius: 20px 0px 20px 0px;
+background-color: black;   
+}
+#slidelink
+{
+color:white;
+text-decoration:none;
+}
+#slidelink:hover
+{
+color:red; 
+text-decoration:underline;
+}
+
+</style>
+</head>
+<body background="PICTURE/background.jpg" bgcolor="black">
+<div id="maindiv">
+<div id="banner">
+    <img src="PICTURE/BANNER.jpg">
+</div>
+ < <div id="newssubmenu" style="z-index:10;">
+     <div style="margin-top: -5px;">
+         <table border="1" width="989px" height="50px" bgcolor="black">
+         <tr>
+             <td width="150" align="center" >
+                <div id="news">
+                <font color="red"><b>NEWS</b></font>
+            </div>
+             </td>
+             <td >
+                <h3 ><font color="white"><marquee onmouseover="stop()" onmouseout="start()"><b>UPCOMING MOVIES OF MARVEL:  <a href="The new mutants.html" id="slidelink" > &nbsp 1. The New Mutants ( 2020 )  </a> <a href="black widow.html" id="slidelink">&nbsp 2. Black Widow ( 2020 )  </a> <a href="the eternals.html" id="slidelink">&nbsp 3. THE Eternals ( 2020 )    </a> <a href="thor the love and thunder.html" id="slidelink">&nbsp 4. Thor The Love And Thunder ( 2022 )</a></b></marquee></font></h3>
+            </td>
+            </div>
+             </td>
+             <td>
+            </td>
+            <td width="200">
+                <ul id="dropmenu">
+                    <li>
+                       <a href="#"><b>MENU</b></a>
+                        <ul class="submenu">
+                         <li>
+                        <li>
+                        <a href="HOME.html">HOME</a>
+                       </li>
+                      <li>
+                        <a href="MCU LOGIN.html">MCU LOGIN</a>
+                     </li>
+                      <li>
+                        <a href="MCU REGISTRATION.html">MCU REGISTRATION</a>
+                       </li>
+                       <li>
+                        <a href="MCU CLIPS.html">MCU CLIPS</a>
+                      </li>
+                       <li>
+                        <a href="MCU MOVIES LIST.html">MCU MOVIES</a>
+                      </li>
+                      <li>
+                        <a href="MCU PICTURE.html">MCU PICTURE</a>
+                       </li>
+                      <li>
+                        <a href="MCU RINGTONES.html">MCU RINGTONES</a>
+                      </li>
+                     </ul>
+                    </li>
+                </ul>
+            </td>
+         </tr>
+          </table>
+    </div>
+ </div>     
+<div id="slider">
+    <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:989px;margin:0px auto 56px;">
+        <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="images/slider1.jpg" alt="slider1"  title="slider1" />
+                </li>
+                <li><img src="images/slider2.jpg" alt="slider2"  title="slider2" />
+                </li>
+                <li><img src="images/slider3.jpg" alt="slider3"  title="slider3" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="images/slider1-tn.jpg" alt="slider1" title="slider1" /></li>
+                <li><img src="images/slider2-tn.jpg" alt="slider2" title="slider2" /></li>
+                <li><img src="images/slider3-tn.jpg" alt="slider3" title="slider3" /></li>
+            </ul>
+        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="JavaScript Slideshow">JavaScript Slideshow</a></div>
+        </div>
+    </div>Slider</div>
+<div id="content">
+<div id="leftside">
+    <h2><font color="red">MENU</font>
+        <ul><h4>
+            <li id="li"><a href="HOME.html" id="abcmenu">HOME</a></li>
+            <li id="li"><a href="MCU CLIPS.html" id="abcmenu">MCU CLIPS</a></li>
+            <li id="li"><a href="MCU MOVIES LIST.html" id="abcmenu">MCU MOVIES</a></li>
+            <li id="li"><a href="MCU PICTURE.html" id="abcmenu">MCU PICTURES</a></li>
+            <li id="li"><a href="MCU RINGTONES.html" id="abcmenu">MCU RINGTONES</a></li>
+            <li id="li"><a href="MCU REGISTRATION.html" id="abcmenu">REGISTRATION</a></li>
+            <li id="li"><a href="MCU LOGIN.html" id="abcmenu">LOGIN</a></li>
+
+        </h4> 
+        </ul>  
+</div>
+<div id="rightside">
+<h2 ><font color="white">FOR ALREADY MEMBER</font></h2>
+<table align="center" width="600" bgcolor="black">
+<font color="white">
+<form>
+<tr>
+<td width="150">
+<b><font color="white">EMAIL</font></b>
+</font></td>
+<td><input placeholder="ENTER YOUR EMAIL" size="50" >
+</font></td>
+</tr>
+<tr>
+<td width="150">
+<b><font color="white"> PASSWORD</font></b>
+</font></td>
+<td><input type="password" size="50" >
+</font></td>
+</tr>
+<tr>
+<td align="right"><input type="submit" value="Login">
+</font></td>
+<td ><input type="reset" value="Clear">
+</font></td>
+</tr>
+</form>
+</table>
+</div>
+</div>
+<div id="footer"><img src="PICTURE/footer.jpg"></div>
+</div>
+</body>
+</html>

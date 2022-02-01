@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>dropdown menu</title>
+<style>
+ul#dropmenu , ul#dropmenu ul.submenu
+{
+padding:0;
+margin: 0;
+margin-top: 11px;
+}
+ul#dropmenu li, ul.submenu li
+{
+    list-style-type: none;
+}
+ul#dropmenu li a, ul.submenu li a
+{
+    text-decoration:none ;
+    color:red;
+    background:black;
+    width: 200px;
+    height: 50px;
+    display:inline-block;
+    border-radius: 20px 0px 20px 0px ;
+    text-align: center;
+    line-height: 50px;
+    border:2px solid red ;
+}
+ul#dropmenu li a:hover, ul.submenu li a:hover
+{
+    text-decoration:none ;
+    color:black;
+    background:red;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 20px 0px 20px 0px ;
+    text-align: center;
+    line-height: 20px;
+    border:2px solid red ;
+}
+ul#dropmenu li
+{
+position: relative;
+}
+ul#dropmenu li ul.submenu
+{
+display: none;
+position: absolute;
+top: 30px;
+left: 0px;
+width:100px ;
+}
+ul#dropmenu li:hover ul.submenu
+{
+    display: block;
+}
+
+
+</style>
+</head>
+<body>
+                <ul id="dropmenu">
+                    <li>
+                       <a href="#"><b>MENU</b></a>
+                        <ul class="submenu">
+                         <li>
+                        <a href="#">MENU1</a>
+                       </li>
+                      <li>
+                        <a href="#">MENU2</a>
+                     </li>
+                      <li>
+                        <a href="#">MENU3</a>
+                       </li>
+                       <li>
+                        <a href="#">MENU4</a>
+                      </li>
+                      <li>
+                        <a href="#">MENU5</a>
+                       </li>
+                      <li>
+                        <a href="#">MENU6</a>
+                      </li>
+                     </ul>
+                    </li>
+                </ul>
+</body>    
+</html>
